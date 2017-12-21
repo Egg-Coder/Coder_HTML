@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	
+<meta charset="utf-8">
+<title>1221</title>
+	
+<style type="text/css">
+	label{
+		font-family: "微软雅黑";
+		font-size: 32px;
+	}	
+	</style>
+	
+<label>1.绘制一个画布 + 一个 X</label><br>
+<canvas height="350px" id="canvas1" width="350px" style="background: #4CCEBC"></canvas>
+
+<script type="text/javascript">
+var canvas=document.getElementById("canvas1");
+var line=canvas.getContext("2d");
+// 左边到右边
+line.moveTo(5,5);
+line.lineTo(345,345);
+line.stroke();
+// 右边到左边
+line.moveTo(5,345);
+line.lineTo(345,5);
+line.stroke();
+</script>
+
+<br><br>
+<label>2.绘制一个画布 + 一个Z</label><br>
+<canvas id="canvas2" height="350px" width="350px" style="background: #4CCEBC"></canvas>	
+
+<script type="text/javascript">
+var canvas=document.getElementById("canvas2");
+var line=canvas.getContext("2d");
+// 横向
+line.moveTo(5,5);
+line.lineTo(345,5);
+line.stroke();
+// 竖
+line.moveTo(5,345);
+line.lineTo(345,5);
+line.stroke();
+// 横向
+line.moveTo(5,345);
+line.lineTo(345,345);
+line.stroke();
+</script>
+</html>
+
